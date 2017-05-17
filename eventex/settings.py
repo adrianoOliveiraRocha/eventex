@@ -81,7 +81,7 @@ default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 DATABASES = {
     'default': config('DATEBASE_URL', default=default_dburl, cast=dburl),
     }
-}
+
 
 
 # Internationalization
