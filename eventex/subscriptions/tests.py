@@ -103,3 +103,5 @@ class SubscribeSucessMessage(TestCase):
 			email='adriano.qwe32@gmail.com', phone='85-99947-3839')
 		response = self.client.post('/inscricao/', data, follow=True)
 		self.assertContains(response, 'Inscrição realizada com sucesso')
+
+	
