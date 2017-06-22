@@ -35,5 +35,5 @@ class SubscriptionModelAdminTest(TestCase):
 
         self.model_admin.mark_as_paid(None, queryset)
         SubscriptionModelAdmin.message_user = old_message_user
-        
+
         return mock
