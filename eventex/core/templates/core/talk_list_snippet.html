@@ -1,0 +1,7 @@
+<h3>{{ obj.start }} - {{obj.title}}</h3>
+<h4>Por
+{% for speaker in obj.speakers.all %}
+<a href="{{ speaker.get_absolute_url }}">{{ speaker.name }}</a>
+{% endfor %}
+</h4>
+<p>{{ talk.description }}</p>
