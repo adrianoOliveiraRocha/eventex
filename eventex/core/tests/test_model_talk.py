@@ -11,6 +11,9 @@ class TalkModelTest(TestCase):
                 description='Descrição da Palestra.'
                 )
 
+    def test_ordering(self):
+        self.assertListEqual(['start'], Talk._meta.ordering)
+
 #    def test_create(self):
 #        self.assertTrue(Talk.objects.exists())
 
@@ -56,3 +59,6 @@ class CourseModelTest(TestCase):
 
     def test_manager(self):
         self.assertIsInstance(Course.objects, PeriodManager)
+
+    def test_ordering(self):
+        self.assertListEqual(['start'], Course._meta.ordering)
