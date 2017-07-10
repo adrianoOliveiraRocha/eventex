@@ -3,7 +3,7 @@
 {% block content %}
 <section>
     <div class="talks content row padding-bottom-3 desktop-12 container">
-    {% for talk in morning_talks %}
+    {% for talk in talk_list.at_morning %}
         <h2>Manhã</h2>
 
         {% for speaker in talk.speakers.all %}
@@ -14,7 +14,7 @@
 
     {% endfor %}
 
-    {% for talk in afternoon_talks %}
+    {% for talk in talk_list.at_afternoon %}
     <h2>Tarde</h2>
 
         {% for speaker in talk.speakers.all %}
